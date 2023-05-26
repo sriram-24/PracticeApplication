@@ -15,6 +15,10 @@ class ViewHelper {
         var intent = Intent(context,CalculatorActivity::class.java)
         return intent
     }
+    fun showIntentActivity(context: Context) : Intent {
+        var intent = Intent(context,IntentActivity::class.java)
+        return intent
+    }
 
     fun showCheckboxActivity(context: Context) : Intent {
         var intent = Intent(context,CheckboxActivity::class.java)

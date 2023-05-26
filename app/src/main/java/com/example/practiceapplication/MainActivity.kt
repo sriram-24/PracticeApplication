@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var  checkboxButton: Button;
     lateinit var  buttonListView : Button
     lateinit var buttonRecyclerView : Button
+    lateinit var buttonIntent : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         checkboxButton = findViewById(R.id.buttonCheck)
         buttonListView = findViewById(R.id.buttonListView)
         buttonRecyclerView = findViewById(R.id.buttonRecyclerView)
+        buttonIntent = findViewById(R.id.buttonIntent)
 
         editTextButton.setOnClickListener{
             startActivity(helper.showEditText(context = this))
@@ -41,6 +43,10 @@ class MainActivity : AppCompatActivity() {
 
         buttonRecyclerView.setOnClickListener(){
             startActivity(helper.showRecyclerViewActivity(this))
+        }
+
+        buttonIntent.setOnClickListener{
+            startActivity(helper.showIntentActivity(this))
         }
 
     }
