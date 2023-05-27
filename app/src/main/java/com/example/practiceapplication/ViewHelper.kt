@@ -35,4 +35,9 @@ class ViewHelper {
         return intent
     }
 
+    fun showViewBindingActivity(context: Context) : Intent {
+        var intent = Intent(context, ViewBindingActivity::class.java)
+        return intent
+    }
+
 }
