@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticeApplication</string>
+    <string name="title_activity_checkbox">CheckboxActivity</string>
+    <string name="editText">" உரையைத் திருத்து"</string>
+    <string name="calculator">கால்குலேட்டர்</string>
+    <string name="checkbox">தேர்வுப்பெட்டி</string>
+    <string name="listView">பட்டியல் பார்வை</string>
+    <string name="recyclerView">மறுசுழற்சி பார்வை</string>
+    <string name="intent">நோக்கம்</string>
+    <string name="viewBinding">பார்வை பிணைப்பு</string>
+    <string name="sharedPreferences">" பகிர்ந்த விருப்பங்கள்"</string>
+</resources>

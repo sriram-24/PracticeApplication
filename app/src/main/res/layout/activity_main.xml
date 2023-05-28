@@ -12,7 +12,7 @@
         android:id="@+id/editButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EditText"
+        android:text="@string/editText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,7 +20,7 @@
         android:id="@+id/buttonCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculator"
+        android:text="@string/calculator"
         app:layout_constraintStart_toEndOf="@+id/editButton"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +28,7 @@
         android:id="@+id/buttonCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Checkbox"
+        android:text="@string/checkbox"
         app:layout_constraintStart_toEndOf="@+id/buttonCalculator"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +36,7 @@
         android:id="@+id/buttonListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="List View"
+        android:text="@string/listView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editButton" />
 
@@ -44,7 +44,7 @@
         android:id="@+id/buttonRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recycler View"
+        android:text="@string/recyclerView"
         app:layout_constraintStart_toEndOf="@+id/buttonListView"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculator" />
 
@@ -52,7 +52,7 @@
         android:id="@+id/buttonIntent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Intent"
+        android:text="@string/intent"
         app:layout_constraintStart_toEndOf="@+id/buttonRecyclerView"
         app:layout_constraintTop_toBottomOf="@+id/buttonCheck" />
 
@@ -60,7 +60,7 @@
         android:id="@+id/buttonViewBinding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Binding"
+        android:text="@string/viewBinding"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonListView" />
 
@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:text="Shared prefernces"
+        android:text="@string/sharedPreferences"
         app:layout_constraintStart_toEndOf="@+id/buttonViewBinding"
         app:layout_constraintTop_toBottomOf="@+id/buttonRecyclerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
