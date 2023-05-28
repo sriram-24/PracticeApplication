@@ -63,4 +63,13 @@
         android:text="View Binding"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonListView" />
+
+    <Button
+        android:id="@+id/buttonSharedPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Shared prefernces"
+        app:layout_constraintStart_toEndOf="@+id/buttonViewBinding"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecyclerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

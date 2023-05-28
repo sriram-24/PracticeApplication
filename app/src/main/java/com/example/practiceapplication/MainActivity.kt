@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonRecyclerView : Button
     lateinit var buttonIntent : Button
     lateinit var buttonViewBinding : Button
+    lateinit var buttonSharedPreferences : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         buttonRecyclerView = findViewById(R.id.buttonRecyclerView)
         buttonIntent = findViewById(R.id.buttonIntent)
         buttonViewBinding = findViewById(R.id.buttonViewBinding)
+        buttonSharedPreferences = findViewById(R.id.buttonSharedPreferences)
 
         editTextButton.setOnClickListener{
             startActivity(helper.showEditText(context = this))
@@ -53,6 +55,10 @@ class MainActivity : AppCompatActivity() {
 
         buttonViewBinding.setOnClickListener{
             startActivity(helper.showViewBindingActivity(this@MainActivity))
+        }
+
+        buttonSharedPreferences.setOnClickListener{
+            startActivity(helper.showSharedPreferencesActivity(this@MainActivity))
         }
 
     }

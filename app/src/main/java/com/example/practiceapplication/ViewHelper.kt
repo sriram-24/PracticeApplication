@@ -40,4 +40,9 @@ class ViewHelper {
         return intent
     }
 
+    fun showSharedPreferencesActivity(context: Context) : Intent {
+        var intent = Intent(context, SharedPreferencesActivity::class.java)
+        return intent
+    }
+
 }
