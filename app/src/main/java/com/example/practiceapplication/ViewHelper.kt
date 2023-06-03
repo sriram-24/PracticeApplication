@@ -54,5 +54,9 @@ class ViewHelper {
         var intent = Intent(context, ListFragmentActivity::class.java)
         return intent
     }
+    fun showDialogFragmentActivity(context: Context) : Intent {
+        var intent = Intent(context, DialogFragmentActivity::class.java)
+        return intent
+    }
 
 }

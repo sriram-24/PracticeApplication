@@ -85,7 +85,16 @@
         android:id="@+id/buttonListFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:text="List fragment"
         app:layout_constraintStart_toEndOf="@+id/buttonFragement"
         app:layout_constraintTop_toBottomOf="@+id/buttonSharedPreferences" />
+
+    <Button
+        android:id="@+id/buttonDialogFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog Fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFragement" />
 </androidx.constraintlayout.widget.ConstraintLayout>
