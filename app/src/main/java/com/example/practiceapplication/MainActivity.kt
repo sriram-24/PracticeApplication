@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonViewBinding : Button
     lateinit var buttonSharedPreferences : Button
     lateinit var buttonFragment : Button
+    lateinit var buttonListFragment : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         buttonViewBinding = findViewById(R.id.buttonViewBinding)
         buttonSharedPreferences = findViewById(R.id.buttonSharedPreferences)
         buttonFragment = findViewById(R.id.buttonFragement)
+        buttonListFragment = findViewById(R.id.buttonListFragment)
 
         editTextButton.setOnClickListener{
             startActivity(helper.showEditText(context = this))
@@ -65,6 +67,10 @@ class MainActivity : AppCompatActivity() {
 
         buttonFragment.setOnClickListener {
             startActivity(helper.showFragmentActivity(this@MainActivity))
+        }
+
+        buttonListFragment.setOnClickListener{
+            startActivity(helper.showListFragmentActivity(this@MainActivity))
         }
 
     }

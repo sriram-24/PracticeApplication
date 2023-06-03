@@ -80,4 +80,12 @@
         android:text="Fragment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonViewBinding" />
+
+    <Button
+        android:id="@+id/buttonListFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List fragment"
+        app:layout_constraintStart_toEndOf="@+id/buttonFragement"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSharedPreferences" />
 </androidx.constraintlayout.widget.ConstraintLayout>

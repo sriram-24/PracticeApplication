@@ -50,4 +50,9 @@ class ViewHelper {
         return intent
     }
 
+    fun showListFragmentActivity(context: Context) : Intent {
+        var intent = Intent(context, ListFragmentActivity::class.java)
+        return intent
+    }
+
 }
