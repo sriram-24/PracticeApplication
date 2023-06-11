@@ -97,4 +97,12 @@
         android:text="Dialog Fragment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonFragement" />
+
+    <Button
+        android:id="@+id/buttonSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send sms"
+        app:layout_constraintStart_toEndOf="@+id/buttonDialogFragment"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListFragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

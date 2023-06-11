@@ -59,4 +59,9 @@ class ViewHelper {
         return intent
     }
 
+    fun showSendSMSActivity(context: Context) : Intent {
+        var intent = Intent(context,SMSActivity::class.java)
+        return intent
+    }
+
 }
