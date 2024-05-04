@@ -1,4 +1,4 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.intents
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

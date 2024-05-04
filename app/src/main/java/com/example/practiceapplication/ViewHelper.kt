@@ -2,8 +2,16 @@ package com.example.practiceapplication
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import calculator.CalculatorActivity
+import com.example.practiceapplication.components.fragments.DialogFragmentActivity
+import com.example.practiceapplication.components.fragments.FragmentActivity
+import com.example.practiceapplication.components.fragments.ListFragmentActivity
+import com.example.practiceapplication.components.intents.CheckboxActivity
+import com.example.practiceapplication.components.intents.IntentActivity
+import com.example.practiceapplication.components.intents.ListViewActivity
+import com.example.practiceapplication.components.intents.RecyclerViewActivity
+import com.example.practiceapplication.components.intents.SharedPreferencesActivity
+import com.example.practiceapplication.components.intents.ViewBindingActivity
 
 class ViewHelper {
     fun showEditText(context: Context) : Intent {
@@ -16,22 +24,22 @@ class ViewHelper {
         return intent
     }
     fun showIntentActivity(context: Context) : Intent {
-        var intent = Intent(context,IntentActivity::class.java)
+        var intent = Intent(context, IntentActivity::class.java)
         return intent
     }
 
     fun showCheckboxActivity(context: Context) : Intent {
-        var intent = Intent(context,CheckboxActivity::class.java)
+        var intent = Intent(context, CheckboxActivity::class.java)
         return intent
     }
 
     fun showListviewActivity(context: Context) : Intent {
-        var intent = Intent(context,ListViewActivity::class.java)
+        var intent = Intent(context, ListViewActivity::class.java)
         return intent
     }
 
     fun showRecyclerViewActivity(context: Context) : Intent {
-        var intent = Intent(context,RecyclerViewActivity::class.java)
+        var intent = Intent(context, RecyclerViewActivity::class.java)
         return intent
     }
 
@@ -61,6 +69,11 @@ class ViewHelper {
 
     fun showSendSMSActivity(context: Context) : Intent {
         var intent = Intent(context,SMSActivity::class.java)
+        return intent
+    }
+
+    fun showServicesActivity(context: Context) : Intent {
+        var intent = Intent(context,ServicesActivity::class.java)
         return intent
     }
 

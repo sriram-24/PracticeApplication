@@ -1,4 +1,4 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.intents
 
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -12,9 +12,8 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-import androidx.navigation.ui.AppBarConfiguration
+import com.example.practiceapplication.R
 
-import com.example.practiceapplication.databinding.ActivityCheckboxBinding
 import com.google.android.material.snackbar.Snackbar
 
 class CheckboxActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener {

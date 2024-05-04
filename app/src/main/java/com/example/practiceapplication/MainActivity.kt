@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonListFragment : Button
     lateinit var buttonDialogFragment : Button
     lateinit var buttonSendSMS : Button
+    lateinit var buttonServices : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         buttonListFragment = findViewById(R.id.buttonListFragment)
         buttonDialogFragment = findViewById(R.id.buttonDialogFragment)
         buttonSendSMS = findViewById(R.id.buttonSendSMS)
+        buttonServices = findViewById(R.id.buttonServices)
 
 
         editTextButton.setOnClickListener{
@@ -84,6 +86,10 @@ class MainActivity : AppCompatActivity() {
 
         buttonSendSMS.setOnClickListener {
             startActivity(helper.showSendSMSActivity(this@MainActivity))
+        }
+
+        buttonServices.setOnClickListener{
+            startActivity(helper.showServicesActivity((this@MainActivity)))
         }
 
     }

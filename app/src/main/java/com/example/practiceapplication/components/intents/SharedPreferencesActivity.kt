@@ -1,4 +1,4 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.intents
 
 import android.content.Context
 import android.content.SharedPreferences

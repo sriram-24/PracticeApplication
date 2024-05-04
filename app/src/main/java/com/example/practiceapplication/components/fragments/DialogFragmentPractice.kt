@@ -1,4 +1,4 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
+import com.example.practiceapplication.R
 
 class DialogFragmentPractice : DialogFragment() {
     lateinit var  buttonOk : Button

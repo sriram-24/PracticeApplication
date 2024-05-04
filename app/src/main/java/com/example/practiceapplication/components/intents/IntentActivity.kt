@@ -1,10 +1,11 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.intents
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.practiceapplication.R
 
 class IntentActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class IntentActivity : AppCompatActivity() {
         buttonSubmit = findViewById(R.id.buttonSubmit)
 
         buttonSubmit.setOnClickListener{
-            var intent : Intent = Intent(this@IntentActivity,ResultPageIntent::class.java);
+            var intent : Intent = Intent(this@IntentActivity, ResultPageIntent::class.java);
 
             intent.putExtra("username",editTextUsername.text.toString())
             intent.putExtra("userage",editTextAge.text.toString().toInt())

@@ -1,9 +1,10 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.practiceapplication.R
 
 class ListFragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

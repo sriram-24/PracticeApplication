@@ -1,8 +1,9 @@
-package com.example.practiceapplication
+package com.example.practiceapplication.components.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
+import com.example.practiceapplication.R
 
 class ListViewSecondFragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

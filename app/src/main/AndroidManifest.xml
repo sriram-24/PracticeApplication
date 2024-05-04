@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
-    <uses-permission  android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -18,41 +18,44 @@
         android:theme="@style/Theme.PracticeApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ServicesActivity"
+            android:exported="false" />
+        <activity
             android:name=".SMSActivity"
             android:exported="false" />
         <activity
-            android:name=".DialogFragmentActivity"
+            android:name=".components.fragments.DialogFragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".ListViewSecondFragmentActivity"
+            android:name=".components.fragments.ListViewSecondFragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".ListFragmentActivity"
+            android:name=".components.fragments.ListFragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".FragmentActivity"
+            android:name=".components.fragments.FragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".SharedPreferencesActivity"
+            android:name=".components.intents.SharedPreferencesActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewBindingActivity"
+            android:name=".components.intents.ViewBindingActivity"
             android:exported="false" />
         <activity
-            android:name=".ResultPageIntent"
+            android:name=".components.intents.ResultPageIntent"
             android:exported="false"
-            android:parentActivityName=".IntentActivity" />
+            android:parentActivityName=".components.intents.IntentActivity" />
         <activity
-            android:name=".IntentActivity"
+            android:name=".components.intents.IntentActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".components.intents.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ListViewActivity"
+            android:name=".components.intents.ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".CheckboxActivity"
+            android:name=".components.intents.CheckboxActivity"
             android:exported="false"
             android:label="@string/title_activity_checkbox"
             android:theme="@style/Theme.PracticeApplication.NoActionBar" />
@@ -71,6 +74,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".services.MyBackgroundService" />
     </application>
 
 </manifest>

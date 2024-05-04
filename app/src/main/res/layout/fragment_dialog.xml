@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/custom_dialog_layout"
     android:padding="30dp"
-    tools:context=".DialogFragmentPractice">
+    tools:context=".components.fragments.DialogFragmentPractice">
 
     <TextView
         android:id="@+id/textView2"

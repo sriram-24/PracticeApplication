@@ -105,4 +105,13 @@
         android:text="Send sms"
         app:layout_constraintStart_toEndOf="@+id/buttonDialogFragment"
         app:layout_constraintTop_toBottomOf="@+id/buttonListFragment" />
+
+    <Button
+        android:id="@+id/buttonServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Services"
+        app:layout_constraintStart_toEndOf="@+id/buttonListFragment"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSharedPreferences" />
 </androidx.constraintlayout.widget.ConstraintLayout>
